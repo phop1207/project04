@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mobile Friendly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center bg-primary text-white p-3">
+        <h1 class="h5 m-0">MyDashboard</h1>
+        <!-- ปุ่ม Logout -->
+        <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-12 mb-3">
+                <div class="list-group text-center">
+                    <a href="#" class="list-group-item list-group-item-action active">Home</a>
+                    <a href="#" class="list-group-item list-group-item-action">Friends</a>
+                    <a href="#" class="list-group-item list-group-item-action">Messages</a>
+                    <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+                    <a href="#" class="list-group-item list-group-item-action">Settings</a>
+                </div>
+            </div>
+
+            <!-- Feed -->
+            <div class="col-12">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">What's on your mind?</h5>
+                        <textarea class="form-control mb-3" rows="3" placeholder="Share something..."></textarea>
+                        <button class="btn btn-primary w-100">Post</button>
+                    </div>
+                </div>
+
+                <!-- Sample Post -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        John Doe
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">This is a sample post! 🚀</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Liked by 10 people • 2 comments
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            // ลิงก์ไปยังหน้าล็อกเอาต์หรือหน้าแรก
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
