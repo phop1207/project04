@@ -158,7 +158,7 @@ body {
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   padding: 10px;
 }
@@ -171,8 +171,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px; /* กำหนดขนาดให้คงที่ */
-  height: 120px;
+  width: 180px; /* กำหนดขนาดให้คงที่ */
+  height: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
