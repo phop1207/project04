@@ -164,17 +164,42 @@ body {
 }
 
 /* ปรับขนาดของไอคอนให้เท่ากัน */
+/* ปรับ menu-item ให้เป็นปุ่ม */
 .menu-item {
   background: white;
   border-radius: 15px;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px; /* กำหนดขนาดให้คงที่ */
-  height: 180px;
+  width: 120px;
+  height: 120px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* ลบเส้นใต้ */
+  color: black; /* ตั้งค่าสีข้อความ */
+  font-weight: bold;
+  transition: 0.3s;
 }
+
+/* เอฟเฟกต์เมื่อ hover */
+.menu-item:hover {
+  background: #d4f1ff;
+  transform: scale(1.05);
+}
+
+/* ปรับขนาดของไอคอน */
+.menu-item img {
+  width: 60px;
+  height: auto;
+}
+
+/* จัดตำแหน่งข้อความใต้ไอคอน */
+.menu-item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 
 /* ปรับขนาดของรูปภาพไอคอน */
 .menu-item img {
