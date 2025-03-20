@@ -70,9 +70,9 @@ body {
 
 /* Status container */
 .status-container {
-  background: rgb(255, 255, 0);
-  border-radius: 25px;
-  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
   display: inline-block;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
