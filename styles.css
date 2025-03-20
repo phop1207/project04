@@ -154,6 +154,39 @@ body {
   height: auto;
 }
 
-      
-  
-  
+/* จัดรูปแบบของ Grid ให้ทุกเมนูมีขนาดเท่ากัน */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* ปรับขนาดของไอคอนให้เท่ากัน */
+.menu-item {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px; /* กำหนดขนาดให้คงที่ */
+  height: 120px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดของรูปภาพไอคอน */
+.menu-item img {
+  width: 60px;  /* ทำให้ขนาดของรูปเท่ากัน */
+  height: auto;
+}
+
+/* ปรับสไตล์ของสถานะอุปกรณ์ */
+.status-container {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
