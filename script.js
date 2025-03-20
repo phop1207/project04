@@ -63,3 +63,31 @@ function logout() {
 if (window.location.pathname.includes("dashboard.html")) {
   checkAuth();
 }
+
+// ตรวจสอบสถานะอุปกรณ์ (ตัวอย่างการเปลี่ยนแปลง)
+function checkDeviceStatus() {
+  let statusElement = document.getElementById("device-status");
+
+  // สมมุติว่าเช็คสถานะจาก API หรืออุปกรณ์จริง
+  let isOnline = Math.random() > 0.5; // จำลองโอกาส Online / Offline
+
+  if (isOnline) {
+      statusElement.textContent = "Online";
+      statusElement.classList.remove("text-danger");
+      statusElement.classList.add("text-success");
+  } else {
+      statusElement.textContent = "Offline";
+      statusElement.classList.remove("text-success");
+      statusElement.classList.add("text-danger");
+  }
+}
+
+// เรียกใช้ฟังก์ชันนี้ทุก 5 วินาที (ตัวอย่างการอัปเดตสถานะ)
+setInterval(checkDeviceStatus, 5000);
+
+// ตรวจสอบสิทธิ์เมื่อเข้า Dashboard
+if (window.location.pathname.includes("dashboard.html")) {
+  checkAuth();
+}
+
+
