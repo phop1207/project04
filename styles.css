@@ -190,3 +190,11 @@ body {
   display: inline-block;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* ปรับขนาดของภาพ Illustration ด้านล่าง */
+.illustration-container img {
+  max-width: 80%; /* ปรับขนาดภาพให้ไม่เกิน 80% ของพื้นที่ */
+  height: auto; /* รักษาอัตราส่วนของภาพ */
+  display: block;
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+}
